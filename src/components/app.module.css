@@ -1,0 +1,113 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 20px;
+  }
+  
+  .page-heading {
+	font-size: 24px;
+	margin-bottom: 10px;
+  }
+  
+  .current-value {
+	font-size: 18px;
+	margin-bottom: 10px;
+  }
+  
+  .error {
+	color: red;
+	font-weight: bold;
+	margin-bottom: 10px;
+  }
+  
+  .buttons-container {
+	display: flex;
+	gap: 10px; /* Расстояние между кнопками */
+	margin-bottom: 20px;
+  }
+  
+  .inputButton,
+  .button {
+	padding: 10px 20px;
+	font-size: 16px;
+	cursor: pointer;
+  }
+  
+  .inputButton {
+	background-color: #646cff;
+	color: white;
+	border: none;
+	border-radius: 5px;
+  }
+  
+  .inputButton:hover {
+	background-color: #535bf2;
+  }
+  .button {
+	background-color: #cfcfcf; /* Начальный цвет для неактивной кнопки */
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: not-allowed;
+  }
+  .button:enabled {
+	background-color: #646cff; /* Цвет для активной кнопки */
+	cursor: pointer;
+  }
+  .button:enabled:hover {
+	background-color: #535bf2; /* Цвет при наведении */
+  }
+  .list-container {
+	margin-top: 20px;
+  }
+  
+  .list-heading {
+	font-size: 20px;
+	margin-bottom: 10px;
+  }
+  
+  .list {
+	list-style: none;
+	padding: 0;
+  }
+  
+  .list-item {
+	font-size: 18px;
+	margin-bottom: 5px;
+  }
+  
+  .date {
+	font-size: 14px;
+	color: #777;
+	margin-left: 10px;
+  }
+  
+  .no-margin-text {
+	font-size: 16px;
+	margin: 0;
+  }
+  .button,
+.inputButton {
+  background-color: #cfcfcf; /* Начальный цвет для неактивной кнопки */
+  color: white;
+  border: none; /* Убираем чёрный бордер */
+  border-radius: 5px;
+  cursor: not-allowed;
+}
+
+.button:enabled,
+.inputButton {
+  background-color: #646cff; 
+  cursor: pointer;
+}
+.button:enabled:hover,
+.inputButton:hover {
+  background-color: #535bf2; 
+}
+
+.button:focus,
+.inputButton:focus {
+  outline: none;
+  box-shadow: none; 
+}
